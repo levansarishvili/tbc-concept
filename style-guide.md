@@ -26,11 +26,8 @@ The designs were created to the following widths:
 - Shuttle Gray (Grey Text Color): #555F62
 - Woodsmoke (Dark Text Color): #141719
 
-## Typography
+## Fonts
 
-### Fonts
-
-- Family: [Nunito Sans](https://fonts.google.com/specimen/Nunito+Sans)
-- Weights: 300, 600, 800
-
-## Icons
+- Family: "TBCX";
+- Weights: 400, 500, 700
+- Sizes: 12px, 14px, 16px, 24px, 28px, 36px, 44px,
