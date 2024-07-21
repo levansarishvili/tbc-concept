@@ -11,7 +11,7 @@ The designs were created to the following widths:
 ## Colors
 
 - Black: #000000
-- Black Haze: #F9FAFA
+- Black Haze (Background Color): #F9FAFA
 - Curious Blue: #3295CE
 - Iron (Card Border): #E1E4E5
 - Iron (Slider Line): #D1D5D6
@@ -25,6 +25,7 @@ The designs were created to the following widths:
 - San Juan: #37506E
 - Shuttle Gray (Grey Text Color): #555F62
 - Woodsmoke (Dark Text Color): #141719
+- Mine Shaft (Dark Text Color): #222
 
 ## Fonts
 
