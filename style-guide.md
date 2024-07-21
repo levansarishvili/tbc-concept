@@ -12,8 +12,9 @@ The designs were created to the following widths:
 
 - Black: #000000
 - Black Haze (Background Color): #F9FAFA
+- Black Haze (Horizontal Border Color): #EEF1F1
 - Curious Blue: #3295CE
-- Iron (Card Border): #E1E4E5
+- Iron (Product Card Border): #E1E4E5
 - Iron (Slider Line): #D1D5D6
 - Linear Gradient Blue Royal Blue: linear-gradient(39deg, #001682 0%, #3240E5 100%)
 - Linear Gradient Blue Royal Blue: linear-gradient(36deg, #001682 0%, #3240E5 100%)
@@ -25,7 +26,7 @@ The designs were created to the following widths:
 - San Juan: #37506E
 - Shuttle Gray (Grey Text Color): #555F62
 - Woodsmoke (Dark Text Color): #141719
-- Mine Shaft (Dark Text Color): #222
+- Mine Shaft (Light Dark Text Color): #222
 
 ## Fonts
 

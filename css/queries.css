@@ -1,0 +1,6 @@
+/* ************** Media Queries For Responsive Design ************** */
+@media screen and (width >= 1440px) {
+  body {
+    font-size: 1.6rem;
+  }
+}

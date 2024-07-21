@@ -9,15 +9,19 @@
 
 html {
   font-size: 62.5%;
+  overflow: hidden;
 }
 
 :root {
   --background-color: #f9fafa;
   --text-color: #555f62;
   --dark-text-color: #141719;
+  --light-dark-text-color: #222;
+  --product-card-border-color: #e1e4e5;
+  --h-border-color: #eef1f1;
   --primary-blue-color: #182cc0;
 
-  --white: #fff;
+  --white-color: #fff;
 }
 body {
   color: var(--text-color);
@@ -26,4 +30,108 @@ body {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.7;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--dark-text-color);
+}
+
+/* ************** Reusable Classes ************** */
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.arrow-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.arrow-link__text {
+  font-size: 1.4rem;
+  color: var(--primary-blue-color);
+  font-weight: 700;
+  line-height: 1.96rem;
+  text-transform: uppercase;
+}
+
+.lang__dropdown {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0 0.8rem;
+  cursor: pointer;
+}
+
+.lang__dropdown__icon {
+  display: flex;
+}
+
+.lang__dropdown__text {
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ************** Header Section ************** */
+.header {
+  width: 100%;
+  height: 8rem;
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--h-border-color);
+}
+
+.header__wrapper {
+  max-width: 110rem;
+  margin: 0 auto;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 0 4rem;
+  cursor: pointer;
+  height: 100%;
+}
+
+.header__dropdown {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__dropdown__name {
+  color: var(--light-dark-text-color);
+  font-size: 1.6rem;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.header__search-button {
+  display: flex;
+  padding: 0.8rem;
+  cursor: pointer;
 }
