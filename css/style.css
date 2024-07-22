@@ -9,7 +9,6 @@
 
 html {
   font-size: 62.5%;
-  overflow: hidden;
 }
 
 :root {
@@ -20,6 +19,8 @@ html {
   --product-card-border-color: #e1e4e5;
   --h-border-color: #eef1f1;
   --primary-blue-color: #182cc0;
+  --hover-button-color: #3295ce;
+  --active-button-color: #2778a7;
 
   --white-color: #fff;
 }
@@ -41,6 +42,17 @@ a:active {
 }
 
 /* ************** Reusable Classes ************** */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5.6rem;
+}
+
 .container {
   max-width: 110rem;
   margin: 0 auto;
@@ -50,14 +62,40 @@ a:active {
   display: flex;
   align-items: center;
   gap: 0.6rem;
+
+  transition: color ease-in-out 0.25s;
+}
+
+.arrow-link a:hover,
+a:link,
+a:visited,
+a:active {
+  color: var(--primary-blue-color);
+}
+
+.arrow-link__icon path {
+  transition: fill ease-in-out 0.25s;
 }
 
 .arrow-link__text {
   font-size: 1.4rem;
-  color: var(--primary-blue-color);
   font-weight: 700;
   line-height: 1.96rem;
   text-transform: uppercase;
+}
+
+.arrow-link:hover {
+  color: var(--hover-button-color);
+}
+
+.arrow-link:active {
+  color: var(--active-button-color);
+}
+.arrow-link:hover path {
+  fill: var(--hover-button-color);
+}
+.arrow-link:active path {
+  fill: var(--active-button-color);
 }
 
 .lang__dropdown {
@@ -65,7 +103,15 @@ a:active {
   align-items: center;
   gap: 0.4rem;
   padding: 0 0.8rem;
+  height: 3.6rem;
   cursor: pointer;
+
+  transition: all ease-in-out 0.25s;
+}
+
+.lang__dropdown:hover {
+  background-color: #eef1f1;
+  border-radius: 4px;
 }
 
 .lang__dropdown__icon {
@@ -86,6 +132,7 @@ a:active {
   height: 8rem;
   background-color: var(--white-color);
   border-bottom: 1px solid var(--h-border-color);
+  margin-bottom: 2.4rem;
 }
 
 .header__wrapper {
@@ -134,4 +181,117 @@ a:active {
   display: flex;
   padding: 0.8rem;
   cursor: pointer;
+}
+
+.header__search-button path {
+  transition: fill ease-in-out 0.25s;
+}
+
+.header__search-button:hover path {
+  fill: var(--hover-button-color);
+}
+
+.header__search-button:active path {
+  fill: var(--active-button-color);
+}
+
+/* ************** Breadcrumbs Component ************** */
+.breadcrumbs {
+  color: var(--dark-text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.04rem;
+}
+
+/* ************** Home Hero Section ************** */
+.banner__wrapper--main {
+  background-image: url(../images/banner-1.png);
+}
+
+.banner__wrapper {
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 9.5rem;
+}
+
+.banner__content {
+  max-width: 92rem;
+  color: var(--white-color);
+}
+
+.banner__inner {
+  max-width: 54rem;
+}
+
+.banner__header {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 4.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.banner__text {
+  line-height: 2.72rem;
+  margin-bottom: 2.4rem;
+}
+
+.banner__button {
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  height: 5rem;
+  border-radius: 4px;
+  line-height: 1.33;
+  background-color: var(--hover-button-color);
+
+  transition: all ease-in-out 0.25s;
+}
+
+.banner__button--main {
+  width: 15rem;
+}
+
+.banner__button__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(15deg, #001682, #3240e5);
+
+  transition: opacity 0.25s ease;
+}
+
+.banner__button:hover .banner__button__hover {
+  opacity: 0;
+}
+
+.banner__button:hover {
+  background: var(--hover-button-color);
+}
+
+.banner__button:active {
+  background: var(--active-button-color);
+}
+
+.banner__button__icon {
+  display: flex;
+}
+
+.banner__button__icon > svg > path {
+  fill: var(--white-color);
+}
+
+.banner__button__text {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.596rem;
+  text-transform: uppercase;
 }

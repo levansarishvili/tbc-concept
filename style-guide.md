@@ -13,12 +13,12 @@ The designs were created to the following widths:
 - Black: #000000
 - Black Haze (Background Color): #F9FAFA
 - Black Haze (Horizontal Border Color): #EEF1F1
-- Curious Blue: #3295CE
 - Iron (Product Card Border): #E1E4E5
 - Iron (Slider Line): #D1D5D6
 - Linear Gradient Blue Royal Blue: linear-gradient(39deg, #001682 0%, #3240E5 100%)
 - Linear Gradient Blue Royal Blue: linear-gradient(36deg, #001682 0%, #3240E5 100%)
 - Linear Gradient Blue Royal Blue: linear-gradient(36deg, #001682 0%, #3240E5 100%)
+- linear-gradient(15deg, #001682, #3240e5);
 - Mako (Dots Background): #424A4D
 - Nero (Elements Background): #FFFFFF
 - Persian Blue: #182CC0
@@ -27,6 +27,8 @@ The designs were created to the following widths:
 - Shuttle Gray (Grey Text Color): #555F62
 - Woodsmoke (Dark Text Color): #141719
 - Mine Shaft (Light Dark Text Color): #222
+- Curious Blue (Button Hover Color): #3295CE
+- (Active Button color): #2778a7
 
 ## Fonts
 
