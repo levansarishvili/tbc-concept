@@ -466,3 +466,154 @@ a:active {
 .arrow-link.is-white:hover .arrow-link__icon path {
   fill: #aeaeae;
 }
+
+/* ************** Stats Section ************** */
+.section__stats {
+  padding: 6rem 0;
+}
+
+.stats-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem;
+}
+
+.stats__item {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 1.6rem;
+  border-radius: 8px;
+  padding: 4rem 4.8rem;
+  background-color: var(--white-color);
+  font-weight: 500;
+}
+
+.stats__item__number {
+  color: var(--dark-text-color);
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* ************** Offers Section ************** */
+.section__offers {
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.header-wrapper {
+  justify-content: space-between;
+}
+
+.slider__container {
+  cursor: grab;
+}
+
+.slider-wrapper {
+  overflow: scroll;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3.8rem;
+}
+
+.slide {
+  width: 35rem;
+  flex-shrink: 0;
+}
+
+.product-card {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: 1px solid #e1e4e5;
+  border-radius: 8px;
+}
+
+.product-card:hover .product-card__img {
+  transform: translateY(-4px);
+}
+
+.product-card__img-wrapper {
+  overflow: hidden;
+  position: relative;
+  height: 21.2rem;
+}
+
+.product-card__img {
+  transition: all ease-in-out 0.25s;
+  transform: translateY(0);
+  height: 102%;
+  object-fit: cover;
+}
+
+.product-card__logo-wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 1.6rem;
+  right: 0;
+  width: 7.8rem;
+  height: 5.6rem;
+  background-color: var(--white-color);
+  border-radius: 6px 0 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card__logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 2.8rem;
+}
+
+.product-card__category-wrapper {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+.product-card__category {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.product-card__title {
+  color: var(--dark-text-color);
+  font-size: 1.6rem;
+}
+
+/* ************** Slider Scrollbar ************** */
+.slider__scrollbar {
+  height: 0.3rem;
+  background-color: #d1d5d6;
+  border-radius: 1px;
+  line-height: 1.7;
+  margin-right: 9.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-scrollbar-drag {
+  width: 30rem;
+  background: var(--primary-blue-color);
+  height: 100%;
+  border-radius: 1px;
+}
+
+/* ************** Slider Navigation Elements ************** */
+
+.slider__nav-arrows {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -0.6rem;
+  cursor: pointer;
+}

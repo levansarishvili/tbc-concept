@@ -295,22 +295,22 @@
           <div class="container">
             <div class="header-wrapper">
               <h2 class="section__header">შეთავაზებები</h2>
-              <a class="arrow-link" href="">
-                <div class="button__icon">
+              <a class="arrow-link" href="#">
+                <div class="arrow-link__icon">
                   <svg
-                    width="14"
-                    height="11"
-                    viewBox="0 0 14 11"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M8.7987 0.366751L13.4654 5.03341C13.732 5.30008 13.732 5.70008 13.4654 5.96675L8.7987 10.6334C8.53203 10.9001 8.13203 10.9001 7.86537 10.6334C7.5987 10.3667 7.5987 9.9667 7.86537 9.7001L11.3987 6.16675H0.998701C0.598701 6.16675 0.332031 5.90008 0.332031 5.50008C0.332031 5.10008 0.598701 4.83341 0.998701 4.83341H11.3987L7.86537 1.30008C7.73203 1.16675 7.66536 1.03341 7.66536 0.833411C7.66536 0.633411 7.73203 0.500081 7.86537 0.366751C8.13203 0.100081 8.53203 0.100081 8.7987 0.366751Z"
+                      d="M9.7987 3.36675L14.4654 8.03341C14.732 8.30008 14.732 8.70008 14.4654 8.96675L9.7987 13.6334C9.53203 13.9001 9.13203 13.9001 8.86537 13.6334C8.5987 13.3667 8.5987 12.9667 8.86537 12.7001L12.3987 9.16675H1.9987C1.5987 9.16675 1.33203 8.90008 1.33203 8.50008C1.33203 8.10008 1.5987 7.83341 1.9987 7.83341H12.3987L8.86537 4.30008C8.73203 4.16675 8.66536 4.03341 8.66536 3.83341C8.66536 3.63341 8.73203 3.50008 8.86537 3.36675C9.13203 3.10008 9.53203 3.10008 9.7987 3.36675Z"
                       fill="#182CC0"
                     />
                   </svg>
                 </div>
-                <span class="button__text"> ყველა შეთავაზება </span>
+                <span class="arrow-link__text"> ყველა შეთავაზება </span>
               </a>
             </div>
             <div class="slider__container">
@@ -318,17 +318,55 @@
                 <div class="slide">
                   <div class="product-card">
                     <div class="product-card__img-wrapper">
-                      <div class="logo">
+                      <img
+                        class="product-card__img"
+                        src="./images/offer-1.png"
+                        alt="MP Development"
+                      />
+                      <div class="product-card__logo-wrapper">
                         <img
+                          class="product-card__logo"
+                          src="./images/mp-development-logo.jpg"
+                          alt="MP
+                        Development logo"
+                        />
+                      </div>
+                    </div>
+                    <div class="product-card__content">
+                      <div class="product-card__category-wrapper">
+                        <p class="product-card__category">ინვესტიციები</p>
+                      </div>
+
+                      <h3 class="product-card__title">
+                        MP დეველოპმენტი - აშშ და ევროს ობლიგაციები
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide">
+                  <div class="product-card">
+                    <div class="product-card__img-wrapper">
+                      <img
+                        class="product-card__img"
+                        src="./images/offer-2.jpg"
+                        alt="Iveria Beech"
+                      />
+                      <div class="product-card__logo-wrapper">
+                        <img
+                          class="product-card__logo"
                           src="./images/iveria-beach-logo.png"
                           alt="Iveria Beach logo"
                         />
                       </div>
                     </div>
                     <div class="product-card__content">
-                      <p class="product-card__category">
-                        ჯაზ ფესტივალის შეთავაზებები
-                      </p>
+                      <div class="product-card__category-wrapper">
+                        <p class="product-card__category">
+                          ჯაზ ფესტივალის შეთავაზებები
+                        </p>
+                      </div>
+
                       <h3 class="product-card__title">
                         IVERIA BEACH - დაიბრუნეთ 30%
                       </h3>
@@ -338,16 +376,25 @@
                 <div class="slide">
                   <div class="product-card">
                     <div class="product-card__img-wrapper">
-                      <div class="logo">
+                      <img
+                        class="product-card__img"
+                        src="./images/offer-3.png"
+                        alt="Tegeta Motors"
+                      />
+                      <div class="product-card__logo-wrapper">
                         <img
+                          class="product-card__logo"
                           src="./images/tegeta-logo.png"
                           alt="Tegeta Motors logo"
                         />
                       </div>
                     </div>
                     <div class="product-card__content">
-                      <p class="product-card__category">ავტო</p>
-                      <p class="product-card__category">თეგეტა მოტორსი</p>
+                      <div class="product-card__category-wrapper">
+                        <p class="product-card__category">ავტო</p>
+                        <p class="product-card__category">თეგეტა მოტორსი</p>
+                      </div>
+
                       <h3 class="product-card__title">
                         თეგეტა მოტორსი - 50% ფასდაკლება
                       </h3>
@@ -357,19 +404,28 @@
                 <div class="slide">
                   <div class="product-card">
                     <div class="product-card__img-wrapper">
-                      <div class="logo">
+                      <img
+                        class="product-card__img"
+                        src="./images/offer-4.png"
+                        alt="Tegeta Motors"
+                      />
+                      <div class="product-card__logo-wrapper">
                         <img
+                          class="product-card__logo"
                           src="./images/tegeta-logo.png"
                           alt="Tegeta Motors logo"
                         />
                       </div>
                     </div>
                     <div class="product-card__content">
-                      <p class="product-card__category">ავტო</p>
-                      <p class="product-card__category">
-                        ჯაზ ფესტივალის შეთავაზებები
-                      </p>
-                      <p class="product-card__category">თეგეტა მოტორსი</p>
+                      <div class="product-card__category-wrapper">
+                        <p class="product-card__category">ავტო</p>
+                        <p class="product-card__category">
+                          ჯაზ ფესტივალის შეთავაზებები
+                        </p>
+                        <p class="product-card__category">თეგეტა მოტორსი</p>
+                      </div>
+
                       <h3 class="product-card__title">
                         თეგეტა მოტორსი - ბათუმი
                       </h3>
@@ -379,19 +435,28 @@
                 <div class="slide">
                   <div class="product-card">
                     <div class="product-card__img-wrapper">
-                      <div class="logo">
+                      <img
+                        class="product-card__img"
+                        src="./images/offer-5.png"
+                        alt="Le Meridien Batumi"
+                      />
+                      <div class="product-card__logo-wrapper">
                         <img
+                          class="product-card__logo"
                           src="./images/meridien-logo.jpg"
                           alt="Le Meridien Batumi logo"
                         />
                       </div>
                     </div>
                     <div class="product-card__content">
-                      <p class="product-card__category">დასვენება</p>
-                      <p class="product-card__category">ვიზა</p>
-                      <p class="product-card__category">
-                        ჯაზ ფესტივალის შეთავაზებები
-                      </p>
+                      <div class="product-card__category-wrapper">
+                        <p class="product-card__category">დასვენება</p>
+                        <p class="product-card__category">ვიზა</p>
+                        <p class="product-card__category">
+                          ჯაზ ფესტივალის შეთავაზებები
+                        </p>
+                      </div>
+
                       <h3 class="product-card__title">
                         Le Meridien Batumi – 15%-იანი ფასდაკლება
                       </h3>
@@ -401,47 +466,42 @@
                 <div class="slide">
                   <div class="product-card">
                     <div class="product-card__img-wrapper">
-                      <div class="logo">
+                      <img
+                        class="product-card__img"
+                        src="./images/offer-6.png"
+                        alt="Colosseum Marina Hotel"
+                      />
+                      <div class="product-card__logo-wrapper">
                         <img
+                          class="product-card__logo"
                           src="./images/colosseum-logo.png"
                           alt="Colosseum Marina Hotel logo"
                         />
                       </div>
                     </div>
                     <div class="product-card__content">
-                      <p class="product-card__category">დასვენება</p>
-                      <p class="product-card__category">ვიზა</p>
-                      <p class="product-card__category">
-                        ჯაზ ფესტივალის შეთავაზებები
-                      </p>
+                      <div class="product-card__category-wrapper">
+                        <p class="product-card__category">დასვენება</p>
+                        <p class="product-card__category">ვიზა</p>
+                        <p class="product-card__category">
+                          ჯაზ ფესტივალის შეთავაზებები
+                        </p>
+                      </div>
+
                       <h3 class="product-card__title">
                         Colosseum Marina Hotel – 15%-იანი ფასდაკლება
                       </h3>
                     </div>
                   </div>
                 </div>
-                <div class="slide">
-                  <div class="product-card">
-                    <div class="product-card__img-wrapper">
-                      <div class="logo">
-                        <img src="./images/pulse-logo.png" alt="Pulse logo" />
-                      </div>
-                    </div>
-                    <div class="product-card__content">
-                      <p class="product-card__category">დასვენება</p>
-                      <p class="product-card__category">სხვა</p>
-                      <h3 class="product-card__title">
-                        PULSE - რითრითი რაჭაში
-                      </h3>
-                    </div>
-                  </div>
-                </div>
               </div>
+
               <!-- Slider Scrollbar -->
               <div class="slider__scrollbar">
                 <div class="slider-scrollbar-drag"></div>
               </div>
             </div>
+
             <!-- Slider Navigation Elements -->
             <div class="slider__nav-arrows">
               <div class="slider__nav-arrows slider-prev">
