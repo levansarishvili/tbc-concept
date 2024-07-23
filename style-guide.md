@@ -29,6 +29,7 @@ The designs were created to the following widths:
 - Mine Shaft (Light Dark Text Color): #222
 - Curious Blue (Button Hover Color): #3295CE
 - (Active Button color): #2778a7
+- (White Arrow Link Hover Color): #aeaeae
 
 ## Fonts
 

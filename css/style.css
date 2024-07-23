@@ -372,6 +372,7 @@ a:active {
 }
 
 .grid-card {
+  position: relative;
   min-height: 25.6rem;
   color: var(--white-color);
   border-radius: 8px;
@@ -380,23 +381,55 @@ a:active {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-}
 
-.grid-card--1 {
-  background-image: url(../images/product-1.png);
+  transition: all ease-in-out 0.25s;
 }
 
 .grid-card--2 {
   grid-area: span 2 / span 1 / span 2 / span 1;
+}
+
+.grid-card:hover {
+  background-size: 105% 105%;
+}
+
+.grid-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  transition: transform ease-in-out 0.25s;
+  filter: brightness(0.75);
+}
+
+.grid-card:hover::before {
+  transform: scale(1.02);
+}
+
+.grid-card--1::before {
+  background-image: url(../images/product-1.png);
+  background-position: center;
+}
+
+.grid-card--2::before {
   background-image: url(../images/product-2.png);
   background-position: center top;
 }
 
-.grid-card--3 {
+.grid-card--3::before {
   background-image: url(../images/product-3.png);
+  background-position: center;
 }
 
 .grid-card__content {
+  z-index: 5;
+  position: relative;
   padding: 4rem;
   display: flex;
   flex-direction: column;
@@ -410,4 +443,26 @@ a:active {
   font-size: 2.4rem;
   line-height: 3rem;
   font-weight: 700;
+}
+
+.arrow-link__icon.is-white svg path {
+  fill: var(--white-color);
+  transition: all ease-in-out 0.25s;
+}
+
+.arrow-link__text.is-white {
+  color: var(--white-color);
+  text-decoration: underline;
+  line-height: 1.4rem;
+
+  transition: all ease-in-out 0.25s;
+}
+
+.arrow-link.is-white:hover .arrow-link__text {
+  color: #aeaeae;
+  text-decoration: none;
+}
+
+.arrow-link.is-white:hover .arrow-link__icon path {
+  fill: #aeaeae;
 }
