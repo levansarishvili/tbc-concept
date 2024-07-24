@@ -56,17 +56,15 @@
           <!-- Header Navigation Menu -->
           <nav class="header__nav">
             <div class="header__dropdown">
-              <div class="header__dropdown-toggle">
-                <p class="header__dropdown__name">პროდუქტები</p>
-              </div>
+              <p class="header__dropdown-toggle" data-index="0">პროდუქტები</p>
               <div class="header__dropdown__line"></div>
               <nav class="header__dropdown__list">
-                <a class="header__dropdown__link" href="#"
+                <a class="header__dropdown__link" href="#products"
                   ><span class="header__dropdown__text"
                     >პროდუქტების მიმოხილვა</span
                   ></a
                 >
-                <a class="header__dropdown__link" href="#"
+                <a class="header__dropdown__link" href="#packages"
                   ><span class="header__dropdown__text">ნაკრები</span></a
                 >
                 <a class="header__dropdown__link" href="#"
@@ -76,15 +74,13 @@
             </div>
 
             <div class="header__dropdown">
-              <div class="header__dropdown-toggle">
-                <p class="header__dropdown__name">შეთავაზებები</p>
-              </div>
+              <p class="header__dropdown-toggle" data-index="1">შეთავაზებები</p>
               <div class="header__dropdown__line"></div>
               <nav class="header__dropdown__list hidden">
                 <a class="header__dropdown__link" href="#"
                   ><span class="header__dropdown__text">მიმოხილვა</span></a
                 >
-                <a class="header__dropdown__link" href="#"
+                <a class="header__dropdown__link" href="#offers"
                   ><span class="header__dropdown__text">შეთავაზებები</span></a
                 >
                 <a class="header__dropdown__link" href="#"
@@ -94,9 +90,9 @@
             </div>
 
             <div class="header__dropdown">
-              <div class="header__dropdown-toggle">
-                <p class="header__dropdown__name">კონცეპტის სივრცე</p>
-              </div>
+              <p class="header__dropdown-toggle" data-index="2">
+                კონცეპტის სივრცე
+              </p>
               <div class="header__dropdown__line"></div>
               <nav class="header__dropdown__list hidden">
                 <a class="header__dropdown__link" href="#"
@@ -108,7 +104,7 @@
                 <a class="header__dropdown__link" href="#"
                   ><span class="header__dropdown__text">ბიბლიოთეკა</span></a
                 >
-                <a class="header__dropdown__link" href="#"
+                <a class="header__dropdown__link" href="#footer"
                   ><span class="header__dropdown__text"
                     >კონცეპტ ფილიალები</span
                   ></a
@@ -263,7 +259,7 @@
           </div>
         </div>
         <!-- ======================== Select Packages Section ======================== -->
-        <section class="section__packages">
+        <section class="section__packages" id="packages">
           <div class="container">
             <div class="header-wrapper">
               <h2 class="section__header">შეარჩიეთ ნაკრები</h2>
@@ -358,7 +354,7 @@
           </div>
         </div>
         <!-- ======================== Offers Section ======================== -->
-        <section class="section__offers">
+        <section class="section__offers" id="offers">
           <div class="container">
             <div class="header-wrapper">
               <h2 class="section__header">შეთავაზებები</h2>
@@ -664,7 +660,7 @@
           </div>
         </section>
         <!-- ======================== Offers (Products) Section ======================== -->
-        <section class="section__offers">
+        <section class="section__offers" id="products">
           <div class="container">
             <div class="header-wrapper">
               <h2 class="section__header">პროდუქტები</h2>
@@ -935,7 +931,7 @@
       </main>
 
       <!-- ======================== Footer Section ======================== -->
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="footer__top-component">
           <div class="container">
             <div class="footer__top-component-inner">
