@@ -52,38 +52,105 @@
               </svg>
             </div>
           </a>
+
+          <!-- Header Navigation Menu -->
           <nav class="header__nav">
             <div class="header__dropdown">
-              <p class="header__dropdown__name">პროდუქტები</p>
+              <div class="header__dropdown-toggle">
+                <p class="header__dropdown__name">პროდუქტები</p>
+              </div>
+              <div class="header__dropdown__line"></div>
+              <nav class="header__dropdown__list">
+                <a class="header__dropdown__link" href="#"
+                  ><span class="header__dropdown__text"
+                    >პროდუქტების მიმოხილვა</span
+                  ></a
+                >
+                <a class="header__dropdown__link" href="#"
+                  ><span class="header__dropdown__text">ნაკრები</span></a
+                >
+                <a class="header__dropdown__link" href="#"
+                  ><span class="header__dropdown__text">პირადი ბანკირი</span></a
+                >
+              </nav>
+            </div>
+
+            <div class="header__dropdown">
+              <div class="header__dropdown-toggle">
+                <p class="header__dropdown__name">შეთავაზებები</p>
+              </div>
               <div class="header__dropdown__line"></div>
               <nav class="header__dropdown__list hidden">
                 <a class="header__dropdown__link" href="#"
-                  >პროდუქტების მიმოხილვა</a
+                  ><span class="header__dropdown__text">მიმოხილვა</span></a
                 >
-                <a class="header__dropdown__link" href="#">ნაკრები</a>
-                <a class="header__dropdown__link" href="#">პირადი ბანკირი</a>
+                <a class="header__dropdown__link" href="#"
+                  ><span class="header__dropdown__text">შეთავაზებები</span></a
+                >
+                <a class="header__dropdown__link" href="#"
+                  ><span class="header__dropdown__text">ღონისძიებები</span></a
+                >
               </nav>
             </div>
+
             <div class="header__dropdown">
-              <p class="header__dropdown__name">შეთავაზებები</p>
+              <div class="header__dropdown-toggle">
+                <p class="header__dropdown__name">კონცეპტის სივრცე</p>
+              </div>
               <div class="header__dropdown__line"></div>
               <nav class="header__dropdown__list hidden">
-                <a class="header__dropdown__link" href="#">მიმოხილვა</a>
-                <a class="header__dropdown__link" href="#">შეთავაზებები</a>
-                <a class="header__dropdown__link" href="#">ღონისძიებები</a>
-              </nav>
-            </div>
-            <div class="header__dropdown">
-              <p class="header__dropdown__name">კონცეპტის სივრცე</p>
-              <div class="header__dropdown__line"></div>
-              <nav class="header__dropdown__list hidden">
-                <a class="header__dropdown__link" href="#">მიმოხილვა</a>
-                <a class="header__dropdown__link" href="#">კაფე</a>
-                <a class="header__dropdown__link" href="#">ბიბლიოთეკა</a>
-                <a class="header__dropdown__link" href="#">კონცეპტ ფილიალები</a>
+                <a class="header__dropdown__link" href="#"
+                  ><span class="header__dropdown__text">მიმოხილვა</span></a
+                >
+                <a class="header__dropdown__link" href="#"
+                  ><span class="header__dropdown__text">კაფე</span></a
+                >
+                <a class="header__dropdown__link" href="#"
+                  ><span class="header__dropdown__text">ბიბლიოთეკა</span></a
+                >
+                <a class="header__dropdown__link" href="#"
+                  ><span class="header__dropdown__text"
+                    >კონცეპტ ფილიალები</span
+                  ></a
+                >
               </nav>
             </div>
           </nav>
+
+          <!-- Header Dropdown Component -->
+          <div class="header__dropdown-wrapper">
+            <div class="container">
+              <div class="header__dropdown__link-block">
+                <div class="header__dropdown__link-img-wrapper">
+                  <img
+                    class="header__dropdown__link-img"
+                    src="./images/cards.png"
+                    alt="Cards Image"
+                  />
+                </div>
+                <a class="arrow-link" href="#">
+                  <div class="arrow-link__icon">
+                    <svg
+                      data-v-562b0aec=""
+                      width="20"
+                      height="21"
+                      viewbox="0 0 20 21"
+                      fill="#182CC0"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        data-v-562b0aec=""
+                        d="M15.8342 4.04761H7.50091C7.04258 4.04761 6.66758 4.42261 6.66758 4.88094C6.66758 5.33927 7.04258 5.71427 7.50091 5.71427H13.8259L3.57578 15.9643C3.25078 16.2893 3.25078 16.8143 3.57578 17.1393C3.74245 17.3059 3.95078 17.3809 4.16744 17.3809C4.38411 17.3809 4.59244 17.2976 4.75911 17.1393L15.0009 6.88927V13.2143C15.0009 13.6726 15.3759 14.0476 15.8342 14.0476C16.2925 14.0476 16.6675 13.6726 16.6675 13.2143V4.88094C16.6675 4.42261 16.2925 4.04761 15.8342 4.04761Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="arrow-link__text"> ციფრული ბანკი </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Header Buttons -->
           <div class="header__buttons">
             <div class="header__search-button">
               <svg
@@ -1344,8 +1411,8 @@
           </svg>
         </div>
 
-        <a class="cookies__button" href="">
-          <div class="button__icon">
+        <a class="arrow-link" href="">
+          <div class="arrow-link__icon">
             <svg
               width="14"
               height="11"
