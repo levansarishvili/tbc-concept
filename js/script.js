@@ -57,10 +57,13 @@ headerNav.addEventListener("click", (e) => {
 });
 
 // Close the dropdown if clicking outside the header nav
+
 document.addEventListener("click", (e) => {
-  if (!headerNav.contains(e.target)) {
-    // Close everything
-    closeHeaderDropdown();
+  if (headerDropdownContainer.classList.contains("open")) {
+    if (!headerNav.contains(e.target)) {
+      // Close everything
+      closeHeaderDropdown();
+    }
   }
 });
 

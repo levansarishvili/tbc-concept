@@ -15,6 +15,8 @@
       href="./images/favicon-32x32.png"
     />
     <script defer src="./js/script.js"></script>
+    <script defer src="./js/offers-slider.js"></script>
+    <script defer src="./js/awards-slider.js"></script>
   </head>
   <body>
     <noscript
@@ -377,8 +379,8 @@
               </a>
             </div>
             <div class="slider__container">
-              <div class="slider-wrapper">
-                <div class="slide">
+              <div class="slider-wrapper slider-wrapper-offer">
+                <div class="slide slide-offer" draggable="false">
                   <div class="product-card">
                     <div class="product-card__img-wrapper">
                       <img
@@ -407,7 +409,7 @@
                   </div>
                 </div>
 
-                <div class="slide">
+                <div class="slide slide-offer" draggable="false">
                   <div class="product-card">
                     <div class="product-card__img-wrapper">
                       <img
@@ -436,7 +438,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="slide">
+
+                <div class="slide slide-offer" draggable="false">
                   <div class="product-card">
                     <div class="product-card__img-wrapper">
                       <img
@@ -464,7 +467,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="slide">
+
+                <div class="slide slide-offer" draggable="false">
                   <div class="product-card">
                     <div class="product-card__img-wrapper">
                       <img
@@ -495,7 +499,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="slide">
+
+                <div class="slide slide-offer" draggable="false">
                   <div class="product-card">
                     <div class="product-card__img-wrapper">
                       <img
@@ -526,7 +531,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="slide">
+
+                <div class="slide slide-offer" draggable="false">
                   <div class="product-card">
                     <div class="product-card__img-wrapper">
                       <img
@@ -561,13 +567,15 @@
 
               <!-- Slider Scrollbar -->
               <div class="slider__scrollbar">
-                <div class="slider-scrollbar-drag"></div>
+                <div
+                  class="slider-scrollbar-drag slider-scrollbar-drag-offer"
+                ></div>
               </div>
             </div>
 
             <!-- Slider Navigation Elements -->
             <div class="slider__nav-arrows">
-              <div class="slider__nav-arrows slider-prev">
+              <div class="slider__nav-arrow slider-left-arrow-offer" id="left">
                 <svg
                   data-v-79b32762=""
                   width="20"
@@ -582,7 +590,10 @@
                   ></path>
                 </svg>
               </div>
-              <div class="slider__nav-arrows slider-next">
+              <div
+                class="slider__nav-arrow slider-right-arrow-offer"
+                id="right"
+              >
                 <svg
                   data-v-79b32762=""
                   width="20"
@@ -754,7 +765,7 @@
             </div>
             <!-- Slider Navigation Elements -->
             <div class="slider__nav-arrows">
-              <div class="slider__nav-arrows slider-prev">
+              <div class="slider__nav-arrow">
                 <svg
                   data-v-79b32762=""
                   width="20"
@@ -769,7 +780,7 @@
                   ></path>
                 </svg>
               </div>
-              <div class="slider__nav-arrows slider-next">
+              <div class="slider__nav-arrow">
                 <svg
                   data-v-79b32762=""
                   width="20"
@@ -814,8 +825,8 @@
               <h2 class="section__header">ჯილდოები</h2>
             </div>
             <div class="slider__container">
-              <div class="slider-wrapper">
-                <div class="slide">
+              <div class="slider-wrapper slider-wrapper-award">
+                <div class="slide slide-award">
                   <div class="award-card">
                     <div class="award-card__content">
                       <div class="award__logo-wrapper">
@@ -833,7 +844,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slide">
+                <div class="slide slide-award">
                   <div class="award-card">
                     <div class="award-card__content">
                       <div class="award__logo-wrapper">
@@ -851,7 +862,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slide">
+                <div class="slide slide-award">
                   <div class="award-card">
                     <div class="award-card__content">
                       <div class="award__logo-wrapper">
@@ -869,7 +880,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slide">
+                <div class="slide slide-award">
                   <div class="award-card">
                     <div class="award-card__content">
                       <div class="award__logo-wrapper">
@@ -890,12 +901,14 @@
               </div>
               <!-- Slider Scrollbar -->
               <div class="slider__scrollbar">
-                <div class="slider-scrollbar-drag"></div>
+                <div
+                  class="slider-scrollbar-drag slider-scrollbar-drag-award"
+                ></div>
               </div>
             </div>
             <!-- Slider Navigation Elements -->
             <div class="slider__nav-arrows">
-              <div class="slider__nav-arrows slider-prev">
+              <div class="slider__nav-arrow slider-left-arrow-award">
                 <svg
                   data-v-79b32762=""
                   width="20"
@@ -910,7 +923,7 @@
                   ></path>
                 </svg>
               </div>
-              <div class="slider__nav-arrows slider-next">
+              <div class="slider__nav-arrow slider-right-arrow-award">
                 <svg
                   data-v-79b32762=""
                   width="20"
@@ -1220,7 +1233,7 @@
     </div>
 
     <!-- ======================== Button Menu ======================== -->
-    <div class="button-menu">
+    <!-- <div class="button-menu ">
       <div class="buttons">
         <span class="button-menu__button">
           <div class="button-menu__icon">
@@ -1365,7 +1378,7 @@
           </svg>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- ======================== Cookies Component ======================== -->
     <div class="cookies-wrapper">
