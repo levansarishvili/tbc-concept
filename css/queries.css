@@ -1,6 +1,398 @@
 /* ************** Media Queries For Responsive Design ************** */
-@media screen and (width >= 1440px) {
+/* Greater or equal to 1440px */
+@media screen and (min-width: 1440px) {
   body {
     font-size: 1.6rem;
+  }
+}
+
+/* Less than 1440px */
+@media screen and (max-width: 1440px) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  .slider__nav-arrows {
+    display: none;
+  }
+
+  .slider__scrollbar {
+    margin-right: 0;
+  }
+}
+
+/* Less than 1024px */
+@media screen and (max-width: 1024px) {
+  .slider-wrapper {
+    gap: 1.5rem;
+  }
+}
+
+/* Less than 991px */
+@media screen and (max-width: 991px) {
+  /* Header Section */
+  .header__nav {
+    display: none;
+  }
+  .header__burger-menu {
+    display: flex;
+  }
+  .lang__dropdown.is-header {
+    display: none;
+  }
+
+  /* Banner Section */
+  .banner__content {
+    padding: 24rem 4.5rem 3.6rem;
+  }
+  /* Stats Section */
+  .stats-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+  /* Get App Section */
+  .app-button {
+    display: none;
+  }
+  .app-button.is-mobile {
+    display: flex;
+  }
+  .get-app__img {
+    width: 60%;
+  }
+
+  /* Packages Section */
+  .grid-cards-wrapper {
+    grid-column-gap: 1.6rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 23.2rem;
+    margin-left: -4.5rem;
+    margin-right: -4.5rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    overflow: auto;
+  }
+
+  .grid-card {
+    width: 28rem;
+    height: 23.2rem;
+  }
+
+  /* All */
+  .section__home-hero {
+    padding-bottom: 5rem;
+  }
+
+  .section__big-message,
+  .section__packages,
+  .section__stats,
+  .section__offers,
+  .section__get-app,
+  .section__awards {
+    padding: 5rem 0;
+  }
+
+  .footer {
+    padding-top: 5rem;
+  }
+}
+
+/* Less than 767px */
+@media screen and (max-width: 767px) {
+  .padding-global {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+
+  /* Header */
+  .header {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+
+  .header__logo-desktop {
+    display: none;
+  }
+
+  .header__logo-mobile {
+    display: flex;
+  }
+
+  /* Banner */
+  .banner__wrapper {
+    margin-left: -4.5rem;
+    margin-right: -4.5rem;
+    border-radius: 0;
+  }
+
+  .banner__inner {
+    max-width: 100%;
+  }
+
+  .banner__header {
+    font-size: 2.4rem;
+  }
+
+  .banner__button {
+    width: 100%;
+  }
+
+  /* Big Message */
+  .big-message__text {
+    font-size: 2.8rem;
+  }
+
+  /* Get App Section*/
+  .get-app__inner {
+    padding: 4.5rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.8rem;
+  }
+
+  .get-app__content {
+    gap: 2.8rem;
+    width: 100%;
+  }
+
+  .get-app__img {
+    width: 100%;
+  }
+
+  .app-button.is-mobile {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer__logo-mobile {
+    display: flex;
+  }
+  .footer__logo-desktop {
+    display: none;
+  }
+
+  .footer__top-component {
+    border-bottom: 1px solid #d1d5d6;
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+  }
+
+  .footer__content {
+    padding-bottom: 0;
+  }
+
+  .footer__content__inner {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    margin-left: -4.5rem;
+    margin-right: -4.5rem;
+  }
+
+  .footer__dropdown {
+    border-bottom: 1px solid #d1d5d6;
+    gap: 0;
+  }
+
+  .footer__dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.6rem 4.5rem;
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+
+  .footer__dropdown__arrow {
+    display: flex;
+  }
+
+  .footer__dropdown__list {
+    padding-bottom: 3.6rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    gap: 2.4rem;
+  }
+
+  .footer__dropdown__text {
+    font-size: 1.6rem;
+  }
+
+  .footer__header {
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+  }
+
+  .footer__contact {
+    padding: 5.6rem 4.5rem;
+  }
+
+  .footer__contact__list {
+    gap: 3.2rem;
+  }
+
+  .footer__social-list {
+    gap: 1.5rem;
+  }
+
+  .footer__social-link {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
+  .footer__bottom-component {
+    background-color: #f9fafa;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    font-size: 1.4rem;
+  }
+
+  .footer__bottom-inner {
+    gap: 3.2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__bottom-logo-wrapper {
+    order: 2;
+  }
+
+  /* All */
+  .section__home-hero {
+    padding-bottom: 4rem;
+  }
+
+  .section__big-message,
+  .section__packages,
+  .section__stats,
+  .section__offers,
+  .section__get-app,
+  .section__awards {
+    padding: 4rem 0;
+  }
+
+  .footer {
+    padding-top: 4rem;
+  }
+}
+
+/* Less then 479px */
+@media screen and (max-width: 479px) {
+  .padding-global {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  /* Header */
+  .header {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .header__buttons {
+    gap: 0.8rem;
+  }
+
+  /* Breadcrumbs component */
+  .breadcrumb__icon {
+    display: flex;
+  }
+
+  .breadcrumbs__component {
+    padding: 1.6rem 0;
+  }
+
+  .arrow-link__text {
+    font-size: 1.2rem;
+  }
+
+  /* Banner */
+  .banner__header {
+    font-size: 1.6rem;
+  }
+
+  .banner__content {
+    padding: 17.2rem 1.5rem 2rem;
+  }
+
+  /* Big Message */
+  .big-message__text {
+    font-size: 2.4rem;
+  }
+
+  .section__header {
+    font-size: 1.4rem;
+  }
+
+  .grid-card__header {
+    font-size: 1.6rem;
+  }
+
+  .stats__item__number {
+    font-size: 3.6rem;
+  }
+
+  /* Footer */
+  .footer__top-component {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  .footer__content__inner {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+  .footer__dropdown-toggle {
+    padding: 2.4rem 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .footer__dropdown__list {
+    gap: 1.6rem;
+    padding-bottom: 2.4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .footer__dropdown__text {
+    font-size: 1.4rem;
+  }
+
+  .footer__contact {
+    padding: 3.2rem 1.5rem;
+  }
+
+  .footer__header {
+    font-size: 1.6rem;
+  }
+
+  .footer__contact__list {
+    margin-bottom: 4.8rem;
+  }
+
+  .footer__bottom-component {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .footer__bottom-inner {
+    gap: 2.4rem;
+  }
+
+  /* All */
+  .section__home-hero {
+    padding-bottom: 3.6rem;
+  }
+
+  .section__big-message,
+  .section__packages,
+  .section__stats,
+  .section__offers,
+  .section__get-app,
+  .section__awards {
+    padding: 3.6rem 0;
+  }
+
+  .footer {
+    padding-top: 3.6rem;
   }
 }
