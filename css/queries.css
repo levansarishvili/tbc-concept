@@ -456,6 +456,10 @@
     gap: 2.4rem;
   }
 
+  .footer__bottom-links {
+    gap: 0.8rem;
+  }
+
   /* All */
   .section__home-hero {
     padding-bottom: 3.6rem;
