@@ -125,6 +125,12 @@ a:active {
   border-radius: 4px;
 }
 
+.lang-toggle {
+  align-items: center;
+  display: flex;
+  gap: 0.4rem;
+}
+
 .lang__dropdown__icon {
   display: flex;
 }
@@ -138,7 +144,7 @@ a:active {
   z-index: 150;
   left: 0;
   top: 4rem;
-  display: flex;
+  display: none;
   justify-content: center;
   color: var(--dark-text-color);
   background-color: var(--white-color);
@@ -148,6 +154,10 @@ a:active {
   padding: 0.8rem 0;
   font-weight: 500;
   width: 100%;
+}
+
+.lang__list-wrapper.active {
+  display: flex;
 }
 
 .lang__list {

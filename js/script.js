@@ -203,3 +203,15 @@ headerDropdownTogglesMobile.forEach((el, index) => {
     });
   });
 });
+
+// /////////////// Language toggler ///////////////
+const langButtons = document.querySelectorAll(".lang__dropdown");
+const langListWrappers = document.querySelectorAll(".lang__list-wrapper");
+const langDropdownText = document.querySelector(".lang__dropdown__text");
+const langListItem = document.querySelector(".lang__list__item");
+
+langButtons.forEach((btn, i) =>
+  btn.addEventListener("click", () => {
+    langListWrappers[i].classList.toggle("active");
+  })
+);
