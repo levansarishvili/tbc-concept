@@ -41,6 +41,11 @@
     display: none;
   }
 
+  .header__dropdown-mobile {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+
   /* Banner Section */
   .banner__content {
     padding: 24rem 4.5rem 3.6rem;
@@ -331,6 +336,12 @@
 
   .header__buttons {
     gap: 0.8rem;
+  }
+
+  /* Header navigation for mobile */
+  .header__dropdown-mobile {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   /* Breadcrumbs component */
