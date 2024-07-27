@@ -58,24 +58,47 @@
     display: flex;
   }
   .get-app__img {
-    width: 60%;
+    width: 50%;
   }
 
   /* Packages Section */
   .grid-cards-wrapper {
     grid-column-gap: 1.6rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 23.2rem;
-    margin-left: -4.5rem;
-    margin-right: -4.5rem;
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
-    overflow: auto;
+    grid-row-gap: 1.6rem;
+    grid-template-columns: 1fr 1fr;
   }
 
   .grid-card {
-    width: 28rem;
     height: 23.2rem;
+  }
+
+  .grid-card__content {
+    padding: 2.4rem;
+  }
+
+  /* Button Menu */
+  .button-menu {
+    bottom: 2.4rem;
+    right: 2.4rem;
+  }
+
+  .button-menu__tooltip {
+    display: none;
+  }
+
+  .button-menu__button:hover {
+    background-color: #fff;
+  }
+  .button-menu__button:active {
+    background-color: #fff;
+  }
+
+  .button-menu__button:hover .button-menu__icon path {
+    fill: var(--text-color);
+  }
+
+  .button-menu__button:hover .button-menu__tooltip {
+    display: none;
   }
 
   /* All */
@@ -161,6 +184,16 @@
 
   .app-button.is-mobile {
     width: 100%;
+  }
+
+  /* Packages */
+  .grid-cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* Offers */
+  .product-card__content {
+    padding: 2rem;
   }
 
   /* Footer */
@@ -256,6 +289,15 @@
     order: 2;
   }
 
+  .footer__dropdown__list-wrapper {
+    overflow: hidden;
+    height: 0;
+  }
+
+  .footer__dropdown__text:hover {
+    color: var(--text-color);
+  }
+
   /* All */
   .section__home-hero {
     padding-bottom: 4rem;
@@ -305,6 +347,11 @@
   }
 
   /* Banner */
+  .banner__wrapper {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
   .banner__header {
     font-size: 1.6rem;
   }
@@ -328,6 +375,22 @@
 
   .stats__item__number {
     font-size: 3.6rem;
+  }
+
+  /* Button Menu */
+  .button-menu {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    gap: 0.8rem;
+  }
+
+  .buttons {
+    gap: 0.8rem;
+  }
+
+  .button-menu__button {
+    width: 4.8rem;
+    height: 4.8rem;
   }
 
   /* Footer */
@@ -355,6 +418,10 @@
 
   .footer__dropdown__text {
     font-size: 1.4rem;
+  }
+
+  .footer__dropdown__list-wrapper.open {
+    height: 8.8rem;
   }
 
   .footer__contact {

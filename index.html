@@ -1066,7 +1066,7 @@
               <div class="footer__content__inner">
                 <div class="footer__col">
                   <div class="footer__dropdown">
-                    <div class="footer__dropdown-toggle">
+                    <div class="footer__dropdown-toggle" data-index="0">
                       <p class="footer__dropdown__name">პროდუქტები</p>
                       <div class="footer__dropdown__arrow">
                         <svg
@@ -1083,23 +1083,26 @@
                         </svg>
                       </div>
                     </div>
-
-                    <nav class="footer__dropdown__list">
-                      <a class="footer__dropdown__link" href=""
-                        ><span class="footer__dropdown__text">ნაკრები</span></a
-                      >
-                      <a class="footer__dropdown__link" href=""
-                        ><span class="footer__dropdown__text"
-                          >პერსონალური ბანკირი</span
-                        ></a
-                      >
-                    </nav>
+                    <div class="footer__dropdown__list-wrapper">
+                      <nav class="footer__dropdown__list">
+                        <a class="footer__dropdown__link" href="#packages"
+                          ><span class="footer__dropdown__text"
+                            >ნაკრები</span
+                          ></a
+                        >
+                        <a class="footer__dropdown__link" href=""
+                          ><span class="footer__dropdown__text"
+                            >პერსონალური ბანკირი</span
+                          ></a
+                        >
+                      </nav>
+                    </div>
                   </div>
                 </div>
 
                 <div class="footer__col">
                   <div class="footer__dropdown">
-                    <div class="footer__dropdown-toggle">
+                    <div class="footer__dropdown-toggle" data-index="1">
                       <p class="footer__dropdown__name">Lifestyle</p>
                       <div class="footer__dropdown__arrow">
                         <svg
@@ -1117,24 +1120,26 @@
                       </div>
                     </div>
 
-                    <nav class="footer__dropdown__list">
-                      <a class="footer__dropdown__link" href=""
-                        ><span class="footer__dropdown__text"
-                          >შეთავაზებები</span
-                        ></a
-                      >
-                      <a class="footer__dropdown__link" href=""
-                        ><span class="footer__dropdown__text"
-                          >ღონისძიებები</span
-                        ></a
-                      >
-                    </nav>
+                    <div class="footer__dropdown__list-wrapper">
+                      <nav class="footer__dropdown__list">
+                        <a class="footer__dropdown__link" href=""
+                          ><span class="footer__dropdown__text"
+                            >შეთავაზებები</span
+                          ></a
+                        >
+                        <a class="footer__dropdown__link" href="#offers"
+                          ><span class="footer__dropdown__text"
+                            >ღონისძიებები</span
+                          ></a
+                        >
+                      </nav>
+                    </div>
                   </div>
                 </div>
 
                 <div class="footer__col">
                   <div class="footer__dropdown">
-                    <div class="footer__dropdown-toggle">
+                    <div class="footer__dropdown-toggle" data-index="2">
                       <p class="footer__dropdown__name">კონცეპტის სივრცე</p>
                       <div class="footer__dropdown__arrow">
                         <svg
@@ -1152,16 +1157,18 @@
                       </div>
                     </div>
 
-                    <nav class="footer__dropdown__list">
-                      <a class="footer__dropdown__link" href=""
-                        ><span class="footer__dropdown__text"
-                          >ბიბლიოთეკა</span
-                        ></a
-                      >
-                      <a class="footer__dropdown__link" href=""
-                        ><span class="footer__dropdown__text">კაფე</span></a
-                      >
-                    </nav>
+                    <div class="footer__dropdown__list-wrapper">
+                      <nav class="footer__dropdown__list">
+                        <a class="footer__dropdown__link" href=""
+                          ><span class="footer__dropdown__text"
+                            >ბიბლიოთეკა</span
+                          ></a
+                        >
+                        <a class="footer__dropdown__link" href=""
+                          ><span class="footer__dropdown__text">კაფე</span></a
+                        >
+                      </nav>
+                    </div>
                   </div>
                 </div>
 
@@ -1303,7 +1310,7 @@
     </div>
 
     <!-- ======================== Button Menu ======================== -->
-    <!-- <div class="button-menu">
+    <div class="button-menu">
       <div class="buttons">
         <span class="button-menu__button">
           <div class="button-menu__icon">
@@ -1421,34 +1428,37 @@
 
       <div class="button-menu__trigger">
         <div class="button-menu__trigger__icon">
-          <svg
-            width="25"
-            height="25"
-            viewBox="0 0 25 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 8.74023C13.65 8.74023 15 7.39023 15 5.74023C15 4.09023 13.65 2.74023 12 2.74023C10.35 2.74023 9 4.09023 9 5.74023C9 7.39023 10.35 8.74023 12 8.74023ZM12 9.74023C10.35 9.74023 9 11.0902 9 12.7402C9 14.3902 10.35 15.7402 12 15.7402C13.65 15.7402 15 14.3902 15 12.7402C15 11.0902 13.65 9.74023 12 9.74023ZM12 16.7402C10.35 16.7402 9 18.0902 9 19.7402C9 21.3902 10.35 22.7402 12 22.7402C13.65 22.7402 15 21.3902 15 19.7402C15 18.0902 13.65 16.7402 12 16.7402Z"
-              fill="white"
-            />
-          </svg>
-        </div>
-        <div class="close-icon hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="#feecec"
-            viewBox="0 0 256 256"
-          >
-            <path
-              d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
-            ></path>
-          </svg>
+          <div class="open-icon">
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 8.74023C13.65 8.74023 15 7.39023 15 5.74023C15 4.09023 13.65 2.74023 12 2.74023C10.35 2.74023 9 4.09023 9 5.74023C9 7.39023 10.35 8.74023 12 8.74023ZM12 9.74023C10.35 9.74023 9 11.0902 9 12.7402C9 14.3902 10.35 15.7402 12 15.7402C13.65 15.7402 15 14.3902 15 12.7402C15 11.0902 13.65 9.74023 12 9.74023ZM12 16.7402C10.35 16.7402 9 18.0902 9 19.7402C9 21.3902 10.35 22.7402 12 22.7402C13.65 22.7402 15 21.3902 15 19.7402C15 18.0902 13.65 16.7402 12 16.7402Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div class="close-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#ffffff"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
+              ></path>
+            </svg>
+          </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- ======================== Cookies Component ======================== -->
     <div class="cookies-wrapper">
@@ -1490,23 +1500,25 @@
           </svg>
         </div>
 
-        <a class="arrow-link" href="">
-          <div class="arrow-link__icon">
-            <svg
-              width="14"
-              height="11"
-              viewBox="0 0 14 11"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8.7987 0.366751L13.4654 5.03341C13.732 5.30008 13.732 5.70008 13.4654 5.96675L8.7987 10.6334C8.53203 10.9001 8.13203 10.9001 7.86537 10.6334C7.5987 10.3667 7.5987 9.9667 7.86537 9.7001L11.3987 6.16675H0.998701C0.598701 6.16675 0.332031 5.90008 0.332031 5.50008C0.332031 5.10008 0.598701 4.83341 0.998701 4.83341H11.3987L7.86537 1.30008C7.73203 1.16675 7.66536 1.03341 7.66536 0.833411C7.66536 0.633411 7.73203 0.500081 7.86537 0.366751C8.13203 0.100081 8.53203 0.100081 8.7987 0.366751Z"
-                fill="#182CC0"
-              />
-            </svg>
-          </div>
-          <span class="button__text">Accept All</span>
-        </a>
+        <div class="cookies-button">
+          <a class="arrow-link arrow-link-cookies" href="">
+            <div class="arrow-link__icon">
+              <svg
+                width="14"
+                height="11"
+                viewBox="0 0 14 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.7987 0.366751L13.4654 5.03341C13.732 5.30008 13.732 5.70008 13.4654 5.96675L8.7987 10.6334C8.53203 10.9001 8.13203 10.9001 7.86537 10.6334C7.5987 10.3667 7.5987 9.9667 7.86537 9.7001L11.3987 6.16675H0.998701C0.598701 6.16675 0.332031 5.90008 0.332031 5.50008C0.332031 5.10008 0.598701 4.83341 0.998701 4.83341H11.3987L7.86537 1.30008C7.73203 1.16675 7.66536 1.03341 7.66536 0.833411C7.66536 0.633411 7.73203 0.500081 7.86537 0.366751C8.13203 0.100081 8.53203 0.100081 8.7987 0.366751Z"
+                  fill="#182CC0"
+                />
+              </svg>
+            </div>
+            <span class="button__text">Accept All</span>
+          </a>
+        </div>
       </div>
     </div>
   </body>
