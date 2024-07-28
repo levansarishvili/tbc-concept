@@ -1,6 +1,7 @@
 # TBC x USAID React Accelerator Program - Project Overview
 
 This is my solution for the TBCConcept technical task as part of the TBC x USAID React Accelerator Program.
+The task was to create a clone of the [tbcconcept](https://tbcconcept.ge/ge) website home page.
 
 ## Screenshot
 
@@ -25,5 +26,5 @@ This is my solution for the TBCConcept technical task as part of the TBC x USAID
 ## Author
 
 - [Portfolio/Resume](https://levansarishvili.github.io/my-cv/)
-- [Linkedin](https://www.linkedin.com/in/levan-sarishvili-b87245b1/)
 - [Github](https://github.com/levansarishvili)
+- [Linkedin](https://www.linkedin.com/in/levan-sarishvili-b87245b1/)
