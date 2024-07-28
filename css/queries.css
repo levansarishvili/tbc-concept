@@ -388,6 +388,11 @@
     font-size: 3.6rem;
   }
 
+  /* Stats Section */
+  .stats__item {
+    padding: 2.4rem;
+  }
+
   /* Button Menu */
   .button-menu {
     bottom: 1.5rem;

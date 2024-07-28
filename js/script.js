@@ -89,6 +89,9 @@ const footerDropdownListWrappers = document.querySelectorAll(
 const footerDropdownArrows = document.querySelectorAll(
   ".footer__dropdown__arrow"
 );
+const footerDropdownLinks = document.querySelectorAll(
+  ".footer__dropdown__link"
+);
 
 // Close all footer dropdown function
 const closeAllFooterDropdown = () => {
@@ -116,6 +119,13 @@ footerMainContent.addEventListener("click", (e) => {
       footerDropdownListWrappers[index].classList.add("open");
       footerDropdownArrows[index].classList.add("open");
     }
+
+    footerDropdownLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        footerDropdownListWrappers[index].classList.remove("open");
+        footerDropdownArrows[index].classList.remove("open");
+      });
+    });
   }
 });
 
