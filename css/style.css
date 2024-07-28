@@ -827,15 +827,35 @@ a:active {
 
 .slider__container {
   overflow: hidden;
-  cursor: grab;
 }
 
 .slider-wrapper {
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
   gap: 3rem;
   margin-bottom: 3.8rem;
+  transition: all ease-in-out 0.6s;
+  scroll-behavior: smooth;
+}
+
+.swiper-wrapper {
+  padding-bottom: 4rem;
+}
+
+.swiper-scrollbar {
+  height: 0.3rem !important;
+  background-color: #d1d5d6 !important;
+}
+
+.swiper-scrollbar-drag {
+  background: var(--primary-blue-color) !important;
+}
+
+.slider-scrollbar-drag {
+  width: 30rem;
+  background: var(--primary-blue-color);
+  height: 100%;
+  border-radius: 1px;
   transition: all ease-in-out 0.6s;
 }
 
@@ -845,7 +865,7 @@ a:active {
 }
 
 .product-card {
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
   height: 395px;
   cursor: pointer;
@@ -859,7 +879,6 @@ a:active {
 }
 
 .product-card:hover {
-  background-color: var(--white-color);
   background-color: var(--white-color);
   box-shadow: 0 36px 40px -15px rgba(12, 43, 67, 0.07);
 }
@@ -1046,7 +1065,6 @@ a:active {
 
 .product-card__teaser {
   overflow: hidden;
-  line-clamp: 4;
   -webkit-line-clamp: 4;
   display: -webkit-box;
   -webkit-box-orient: vertical;

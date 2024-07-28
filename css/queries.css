@@ -26,10 +26,28 @@
   .slider-wrapper {
     gap: 1.5rem;
   }
+  /* Reset Hovers */
+  .grid-card:hover::before {
+    transform: scale(1);
+  }
+
+  .product-card:hover .product-card__img {
+    transform: translateY(0);
+  }
 }
 
 /* Less than 991px */
 @media screen and (max-width: 991px) {
+  /* Reset Hovers */
+  .product-card:hover {
+    background-color: var(--background-color);
+    box-shadow: 0 0 0 0 var(--background-color);
+  }
+
+  .award-card:hover {
+    border-color: #fff;
+    box-shadow: 0 0 0 0 #fff;
+  }
   /* Header Section */
   .header__nav {
     display: none;
@@ -69,12 +87,18 @@
   /* Packages Section */
   .grid-cards-wrapper {
     grid-column-gap: 1.6rem;
-    grid-row-gap: 1.6rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: auto;
+    margin-left: -4.7rem;
+    margin-right: -4.7rem;
+    padding-left: 4.7rem;
+    padding-right: 4.7rem;
   }
 
   .grid-card {
     height: 23.2rem;
+    width: 28rem;
+    max-width: 100%;
   }
 
   .grid-card__content {
@@ -138,6 +162,10 @@
     padding-right: 4.5rem;
   }
 
+  .header-wrapper {
+    margin-bottom: 2.8rem;
+  }
+
   .header__logo-desktop {
     display: none;
   }
@@ -191,14 +219,17 @@
     width: 100%;
   }
 
-  /* Packages */
-  .grid-cards-wrapper {
-    grid-template-columns: 1fr;
-  }
-
   /* Offers */
   .product-card__content {
     padding: 2rem;
+  }
+
+  /* Packages */
+  .grid-cards-wrapper {
+    margin-left: -4.5rem;
+    margin-right: -4.5rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   /* Footer */
@@ -338,6 +369,10 @@
     gap: 0.8rem;
   }
 
+  .header-wrapper {
+    margin-bottom: 2rem;
+  }
+
   /* Header navigation for mobile */
   .header__dropdown-mobile {
     padding-left: 1.5rem;
@@ -384,6 +419,10 @@
     font-size: 1.6rem;
   }
 
+  .grid-card {
+    max-width: 100%;
+  }
+
   .stats__item__number {
     font-size: 3.6rem;
   }
@@ -391,6 +430,14 @@
   /* Stats Section */
   .stats__item {
     padding: 2.4rem;
+  }
+
+  /* Packages */
+  .grid-cards-wrapper {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   /* Button Menu */

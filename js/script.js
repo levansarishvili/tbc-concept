@@ -225,3 +225,51 @@ langButtons.forEach((btn, i) =>
     langListWrappers[i].classList.toggle("active");
   })
 );
+
+/////////////// Slider Component ///////////////
+document.addEventListener("DOMContentLoaded", () => {
+  // Slider for Offer Section
+  const swiper1 = new Swiper(".s1", {
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+
+    // Breakpoints
+    breakpoints: {
+      0: { slidesPerView: 1, spaceBetween: 1.6 },
+      660: { slidesPerView: 2, spaceBetween: 16 },
+      1024: { slidesPerView: 3, spaceBetween: 30 },
+    },
+  });
+
+  // Slider for Awards Section
+  const swiper2 = new Swiper(".s2", {
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+
+    // Breakpoints
+    breakpoints: {
+      0: { slidesPerView: 1, spaceBetween: 16 },
+      660: { slidesPerView: 2, spaceBetween: 16 },
+      1024: { slidesPerView: 3, spaceBetween: 30 },
+    },
+  });
+
+  // Slider for Products Section
+  const swiper3 = new Swiper(".s3", {
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+
+    // Breakpoints
+    breakpoints: {
+      0: { slidesPerView: 1, spaceBetween: 16 },
+      660: { slidesPerView: 2, spaceBetween: 16 },
+      1024: { slidesPerView: 3, spaceBetween: 30 },
+    },
+  });
+});
