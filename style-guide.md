@@ -2,8 +2,6 @@
 
 ## Layout
 
-The designs were created to the following widths:
-
 - Mobile: 375px
 - Tablet: 768px
 - Desktop: 1440px
