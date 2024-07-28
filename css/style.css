@@ -40,7 +40,7 @@ a:hover,
 a:visited,
 a:active {
   text-decoration: none;
-  color: var(--dark-text-color);
+  color: var(--primary-blue-color);
 }
 
 /* ************** Reusable Classes ************** */
