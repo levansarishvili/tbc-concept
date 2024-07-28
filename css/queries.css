@@ -87,6 +87,7 @@
   /* Packages Section */
   .grid-cards-wrapper {
     grid-column-gap: 1.6rem;
+    grid-row-gap: 0;
     grid-template-columns: 1fr 1fr 1fr;
     overflow: auto;
     margin-left: -4.7rem;
@@ -154,6 +155,10 @@
   .padding-global {
     padding-left: 4.5rem;
     padding-right: 4.5rem;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 3rem;
   }
 
   /* Header */
