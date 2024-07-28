@@ -10,8 +10,8 @@ This is my solution of tbcconcept technical task.
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://github.com/levansarishvili/tbc-concept)
-- Live Site URL: [Add live site URL here](https://levansarishvili.github.io/tbc-concept/)
+- Solution URL: [https://github.com/levansarishvili/tbc-concept](https://github.com/levansarishvili/tbc-concept)
+- Live Site URL: [https://levansarishvili.github.io/tbc-concept/](https://levansarishvili.github.io/tbc-concept/)
 
 ## Built with
 
@@ -26,5 +26,5 @@ This is my solution of tbcconcept technical task.
 
 ## Author
 
-- Portfolio/Resume - [Add your name here](https://levansarishvili.github.io/my-cv/)
-- Linkedin - [@yourusername](https://www.linkedin.com/in/levan-sarishvili-b87245b1/)
+- Portfolio/Resume - [https://levansarishvili.github.io/my-cv/](https://levansarishvili.github.io/my-cv/)
+- Linkedin - [https://www.linkedin.com/in/levan-sarishvili-b87245b1/](https://www.linkedin.com/in/levan-sarishvili-b87245b1/)
